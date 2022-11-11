@@ -1,0 +1,102 @@
+
+#title-block {
+    background-image: url("images/haikei.png");
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#title-block b {
+    /* 3-2-1 Trip ! */
+    top: 140px;
+    padding-top: 90px;
+    font-family: 'Mate SC', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    color: #5CB1BD;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade{
+    0%{
+    opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
+}
+
+#about {
+    /* ３つのフリーワードからあなたにぴったりな国内の旅行先を提案します */
+    background-color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    /* ３つのフリーワードからあなたにぴったりな国内の旅行先を提案します */
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: #000000;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+#button {
+    /* Start */
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.about-page {
+    display       : inline-block;
+    font-size     : 14pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    font-family   : 'Noto Sans JP', sans-serif;
+    cursor        : pointer;     /* カーソル   */
+    padding       : 2px 2px;   /* 余白       */
+    background    : #FFFFFF;     /* 背景色     */
+    color         : #5cb1bd;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.9;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    border        : none;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.start {
+    display       : inline-block;
+    border-radius : 50%;          /* 角丸       */
+    font-size     : 25pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    font-family   : 'Mate SC', serif;
+    cursor        : pointer;     /* カーソル   */
+    padding       : 17px 59px;   /* 余白       */
+    background    : #5cb1bd;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.9;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 11px #72919e;  /* 影の設定 */
+    border        : none;
+}
+
+.start:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
+}

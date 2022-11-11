@@ -1,0 +1,38 @@
+
+body {
+    background-color: #5cb1bd;
+}
+
+#page-title {
+    text-align: center;
+    
+}
+
+#page-title h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #FFFFFF;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+#about h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #FFFFFF;
+    font-size: 30px;
+    
+}
+
+#about h2 b {
+    background: linear-gradient(transparent 75%, #5bddf4 20%);
+}
+
+#about p {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+#about {
+    text-align: center;
+}
