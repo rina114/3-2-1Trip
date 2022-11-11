@@ -11,7 +11,7 @@ app = Flask(__name__) #アンダースコア(_)をnameの左右にそれぞれ2�
 
 #ルーティング設定をする
 # スタート画面
-@app.route('/', )
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
 
