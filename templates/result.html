@@ -8,7 +8,7 @@
     <link rel=stylesheet href="../static/index.css"><!-- cssファイルの読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Monomaniac+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,57 +20,36 @@
     
     <section id="spot-name">
         <h2>あなたにおすすめの旅行先は、、</h2>
-        <br>
         <h2><b>{{name}}</b>です！</h2>
     </section>
 
-    <section id="spot-img">
-        <img src= "{{ img_path }}" style="margin: 0px; vertical-align: top; width: 100%;">
-    </section>
-
-    <section id="caption">
-        <p>{{caption}}</p>
-    </section>
-
-    <div class="info">
-        <h3><span>口コミ/周辺情報を見る</span></h3>
-        <div class="info-box">
-            <p>
-                <b>口コミ</b>
-                <br>
-                <a href="{{url}}/reviews" target="_blank" rel="noopener noreferrer">クリックで口コミを表示</a>
-            </p>
-            <p>
-                <b>周辺のおすすめ</b>
-                <br>
-                <a href="{{around_url}}" target="_blank" rel="noopener noreferrer">クリックで周辺のおすすめスポットを表示</a>
-            </p>
+    <div class="spot-container">
+        <div class="spot-img">
+            <img src= "{{ img_path }}" style="vertical-align: middle; width: 100%;">
+        </div>
+        <div class="spot-caption">
+            <p>{{caption}}</p>
         </div>
     </div>
-
-    <section id="address">
-        <h3><span>現在地からのアクセス</span></h3>
-        <div class="access-info">
-            <p class="add">
-                <b>住所</b>
-                <br>
-                {{address}}
-            </p>
-            <p class="map">
-                <a href="https://www.google.com/maps/dir/?api=1&destination={{address}}" target="_blank" rel="noopener noreferrer">クリックで現在地からのアクセスを表示</a>
-            </p>
+    <br>
+    <div class="info-container">
+        <div class="reviews">
+            <a href="{{url}}/reviews" target="_blank" rel="noopener noreferrer">口コミ👀</a>
         </div>
-    </section>
-
+        <div class="around">
+            <a href="{{around_url}}" target="_blank" rel="noopener noreferrer">周辺のおすすめスポット🏢</a>
+        </div>
+        <div class="access">
+            <a href="https://www.google.com/maps/dir/?api=1&destination={{address}}" target="_blank" rel="noopener noreferrer">現在地からのアクセス🚙</a>
+        </div> 
+    </div>
+    <br>
     <section id="retry">
         <form action = "/input" method="post" enctype="multipart/form-data">
             <input type="submit" value="条件を変更する" class="retry-button">
         </form>
     </section>
 
-    <footer>
-        <small>© 2022 Suzuki Rina</small>
-    </footer>
 </body>
 
 </html>
