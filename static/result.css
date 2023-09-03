@@ -1,16 +1,15 @@
 header {
-    margin: 10px;
     text-align: right;
 }
 
 .to-home {
     display       : inline-block;
     font-size     : 14pt;        /* 文字サイズ */
-    font-family   : 'Noto Sans JP', sans-serif;
+    font-family: 'Kiwi Maru', serif;
     cursor        : pointer;     /* カーソル   */
     padding       : 2px 2px;   /* 余白       */
     background    : #FFFFFF;     /* 背景色     */
-    color         : #5cb1bd;     /* 文字色     */
+    color         : #d25fb9;     /* 文字色     */
     line-height   : 1em;         /* 1行の高さ  */
     opacity       : 0.9;         /* 透明度     */
     transition    : .3s;         /* なめらか変化 */
@@ -19,25 +18,43 @@ header {
 
 #spot-name {
     text-align: center;
-    margin-top: 50px;
+    margin-right: 5%;
+    margin-left: auto;
+    width: 60%;
 }
 
 h2{
     text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Kiwi Maru', serif;
     font-style: normal;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 40px;
     color: #000000;
 }
 
 #spot-name b {
     font-size: 50px;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #5CB1BD;
-    background: linear-gradient(transparent 70%, #83f2fa 40%);
+    font-family: 'Kiwi Maru', serif;
+    color: #d25fb9;
+    background: linear-gradient(transparent 70%, #e7bee4 40%);
     animation-name: fade;
     animation-duration: 2s;
+}
+
+.spot-container{
+    display: flex;
+    margin-right: 5%;
+    margin-left: auto;
+    width: 60%;
+}
+
+.spot-container p{
+    font-size: 14px;
+    font-family: 'Kiwi Maru', serif;
+}
+
+.spot-caption p{
+    margin: 0 5%;
 }
 
 @keyframes fade{
@@ -49,79 +66,29 @@ h2{
     }
 }
 
-#caption {
-    margin : 20px ;
-    text-align: center;
-}
-
-#caption p {
-    font-size: 16px;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-.info {
-    text-align: center;
-    background-color: aliceblue;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-}
-
-#address {
-    text-align: center;
-    background-color: aliceblue;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-    margin-bottom: 40px;
-}
-h3 {
-    font-size: 26px;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #FFFFFF;
-}
-
-h3 span {
-    opacity       : 0.9;         /* 透明度     */
-    padding: 5px 20px 5px 20px;
-    background-color: #5CB1BD;
-    border-radius: 40px;
-    border: 2px solid #5CB1BD;
-}
-
-.info-box {
+.info-container {
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    margin-right: 5%;
+    margin-left: auto;
+    width: 60%;
     align-items: center;
-}
-
-.info-box b {
-    font-size: 18px;
-    font-family: 'Noto Sans JP', sans-serif;
+    justify-content: space-around;
 }
 
 a {
     font-size: 18px;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #45a2ae;
-}
-
-.access-info {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-}
-
-.access-info p {
-    font-size: 18px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Kiwi Maru', serif;
+    color: #d25fb9;
 }
 
 #retry {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 50px;
+    margin-right: 5%;
+    margin-left: auto;
+    width: 60%;
 }
 
 .retry-button {
@@ -129,14 +96,14 @@ a {
     border-radius : 50%;          /* 角丸       */
     font-size     : 15pt;        /* 文字サイズ */
     text-align    : center;      /* 文字位置   */
-    font-family   : 'Noto Sans JP', sans-serif;
+    font-family: 'Kiwi Maru', serif;
     padding       : 17px 59px;   /* 余白       */
-    background    : #5cb1bd;     /* 背景色     */
+    background    : #d25fb9;     /* 背景色     */
     color         : #ffffff;     /* 文字色     */
     line-height   : 1em;         /* 1行の高さ  */
     opacity       : 0.9;         /* 透明度     */
     transition    : .3s;         /* なめらか変化 */
-    box-shadow    : 6px 6px 11px #72919e;  /* 影の設定 */
+    box-shadow    : 6px 6px 11px #9e7292;  /* 影の設定 */
     border        : none;
 }
 
@@ -145,14 +112,3 @@ a {
     opacity       : 1;           /* カーソル時透明度 */
 }
 
-footer {
-    width: 100%;
-    height: 50px;
-    background-color: #5CB1BD;
-    text-align: right;
-    bottom: 0;
-}
-
-small {
-    font-family: ''Noto Sans JP', serif;
-}
