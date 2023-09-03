@@ -1,28 +1,36 @@
 body {
+    background-image: url("images/odekake.png");
+    background-size: 50%;
+    background-position: left top;
+    background-repeat: no-repeat, no-repeat;
     margin: 0;
     padding: 0;
+    
 }
 
 #title-block {
-    background-image: url("images/haikei.png");
+    /* background-image: url("images/odekake.png");
     background-size: cover;
-    background-position: center center;
-    height: 550px;
+    background-position: center center; */
+    /* height: 550px; */
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-right: 0;
+    margin-left: auto;
+    width: 70%;
 }
 
 #title-block b {
     /* 3-2-1 Trip ! */
-    top: 140px;
+    /* top: 140px; */
     padding-top: 90px;
-    font-family: 'Mate SC', serif;
+    font-family: 'Kiwi Maru', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 90px;
-    color: #5CB1BD;
+    color: #de37a9;
     animation-name: fade;
     animation-duration: 2s;
 }
@@ -38,21 +46,23 @@ body {
 
 #about {
     /* ３つのフリーワードからあなたにぴったりな国内の旅行先を提案します */
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     text-align: center;
-    justify-content: center;
-    padding-top: 20px;
+    /* padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
+    margin-right: 0;
+    margin-left: auto;
+    width: 70%;
 }
 
 h1 {
     /* ３つのフリーワードからあなたにぴったりな国内の旅行先を提案します */
     text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Kiwi Maru', serif;
     font-style: normal;
     font-size: 20px;
-    color: #000000;
+    color: #1a1a1a;
     animation-name: fade;
     animation-duration: 2s;
 }
@@ -61,7 +71,9 @@ h1 {
     /* Start */
     justify-content: center;
     text-align: center;
-    margin-bottom: 50px;
+    margin-right: 0;
+    margin-left: auto;
+    width: 70%;
     animation-name: fade;
     animation-duration: 2s;
 }
@@ -70,11 +82,11 @@ h1 {
     display       : inline-block;
     font-size     : 14pt;        /* 文字サイズ */
     text-align    : center;      /* 文字位置   */
-    font-family   : 'Noto Sans JP', sans-serif;
+    font-family   : 'Kiwi Maru', serif;
     cursor        : pointer;     /* カーソル   */
     padding       : 2px 2px;   /* 余白       */
     background    : #FFFFFF;     /* 背景色     */
-    color         : #5cb1bd;     /* 文字色     */
+    color         : #de37a9;     /* 文字色     */
     line-height   : 1em;         /* 1行の高さ  */
     opacity       : 0.9;         /* 透明度     */
     transition    : .3s;         /* なめらか変化 */
@@ -84,23 +96,24 @@ h1 {
 }
 
 .start {
-    display       : inline-block;
-    border-radius : 50%;          /* 角丸       */
-    font-size     : 25pt;        /* 文字サイズ */
-    text-align    : center;      /* 文字位置   */
-    font-family   : 'Mate SC', serif;
-    cursor        : pointer;     /* カーソル   */
-    padding       : 17px 59px;   /* 余白       */
-    background    : #5cb1bd;     /* 背景色     */
-    color         : #ffffff;     /* 文字色     */
-    line-height   : 1em;         /* 1行の高さ  */
-    opacity       : 0.9;         /* 透明度     */
-    transition    : .3s;         /* なめらか変化 */
-    box-shadow    : 6px 6px 11px #72919e;  /* 影の設定 */
-    border        : none;
+    display: block;
+	text-align: center;
+	/* vertical-align: middle; */
+	/* text-decoration: none; */
+    font-family   : 'Kiwi Maru', serif;
+    font-size: 20px;
+	width: 150px;
+	margin: auto;
+	padding: 1rem 1rem;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 7px solid #de37a9;
+	background: #ea6fc5;
+	color: #fff;
 }
 
 .start:hover {
-    box-shadow    : none;        /* カーソル時の影消去 */
-    opacity       : 1;           /* カーソル時透明度 */
+    margin-top: 6px;
+	border-bottom: 1px solid #0686b2;
+	color: #fff;
 }
